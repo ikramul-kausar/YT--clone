@@ -1,0 +1,150 @@
+.video-preview-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 16px;
+  row-gap: 36px;
+  margin-top: 12px;
+}
+
+@media (max-width: 650px) {
+  .video-preview-grid {
+    grid-template-columns: 1fr;
+  }
+}
+@media (min-width: 651px) and (max-width: 1000px) {
+  .video-preview-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (min-width: 1001px) and (max-width: 1400px) {
+  .video-preview-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1401px) {
+  .video-preview-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+@media (min-width: 1001px) {
+  .video-title {
+    font-size: 20px;
+    line-height: 24px;
+    /* works for font color not for size why??*/
+    /* do we need to write separate media queries??*/
+  }
+}
+@media (min-width: 1001px) {
+  .channel-stats {
+    /* color: rgb(255, 5, 201); */
+    /* why is it not working?? */
+  }
+}
+
+.video-thumbnail-container {
+  width: 100%;
+  margin-bottom: 12px;
+  position: relative;
+}
+.video-thumbnail {
+  width: 100%;
+  border-radius: 12px;
+}
+.video-time {
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 4px;
+  color: white;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  padding: 3px 6px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.video-info-grid {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  column-gap: 10px;
+  align-items: top;
+}
+.profile-tooltip-container {
+  position: relative;
+}
+.profile-tooltip-container .tooltip {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.448);
+  border-radius: 6px;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  z-index: 2;
+  pointer-events: none;
+  padding: 8px 10px;
+  opacity: 0;
+  transition: opacity 0.15s;
+}
+.profile-tooltip-container:hover .tooltip {
+  opacity: 1;
+}
+.profile-tooltip-container .tooltip img {
+  width: 60px;
+  border-radius: 30px;
+  margin-right: 10px;
+}
+
+.tooltip-channel-info .channel-name {
+  font-size: 18px;
+  font-weight: 700;
+}
+.tooltip-channel-info .channel-stats {
+  white-space: nowrap;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.profile-picture {
+  display: flex;
+  align-items: start;
+  justify-content: center;
+}
+
+.profile-picture-img {
+  width: 40px;
+  border-radius: 25px;
+}
+
+.video-title {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 8px;
+  color: black;
+}
+.video-title-link {
+  text-decoration: none;
+  color: black;
+}
+.video-title-link:visited {
+  color: black;
+}
+.channel-name {
+  color: rgb(79, 79, 79);
+  font-size: 12px;
+  margin-bottom: 4px;
+}
+.channel-name:hover {
+  text-decoration: underline;
+}
+.channel-name-link {
+  text-decoration: none;
+}
+.channel-name-link:visited {
+  color: rgb(79, 79, 79);
+}
+.channel-stats {
+  color: rgb(79, 79, 79);
+  font-size: 12px;
+}

@@ -1,0 +1,43 @@
+p{
+  margin: 0px;
+}
+body{
+  font-family: Roboto, Arial;
+  margin-right: 24px;
+  padding-bottom: 30px;
+  padding-top: 116px;
+  padding-left:90px;
+  padding-right: 10px;
+  transition: padding-left 0.12s;
+}
+@media (min-width:1300px){
+  body{
+    padding-left:256px;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 8px;               /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgb(255, 255, 255);        /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(154, 154, 154);    /* color of the scroll thumb */
+  border-radius: 20px;       /* roundness of the scroll thumb */
+    /* creates padding around scroll thumb */
+}
+.loading-container{
+ margin-top: 40px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loading-container img{
+  margin: 8px;
+  width: 44px;
+}

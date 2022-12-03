@@ -1,0 +1,133 @@
+.sidebar{
+  padding: 4px 4px;
+  position: fixed;
+  top: 56px;
+  bottom: 0;
+  left: 0;
+  width: 70px;
+  margin-top: -1px;
+  z-index: 200;
+  transition: width 0.12s;
+}
+
+
+.sidebar-element{
+  border-radius: 6px;
+  padding-top: 16px;
+  padding-bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 10px;
+  cursor: pointer;
+}
+
+
+.sidebar-element:hover{
+  background-color: rgb(230, 230, 230);
+}
+
+.sidebar-element img{
+  width: 24px;
+  margin-bottom: 8px;
+}
+.separator{
+  height: 2px;
+  max-width: 200px;
+  background-color: rgb(235, 235, 235);
+  margin-top: 12px;
+  margin-bottom: 12px;
+  
+}
+.hidden,
+.hidden-block{
+  display: none;
+}
+
+.sidebar-group{
+  /* background-color: red;  */
+  margin-top: 16px;
+  margin-bottom: 8px;
+  margin-left: 12px;
+  font-size: 16px;
+  
+}
+.subbed-channel{
+  height:24px;
+  width:24px;
+  border-radius: 12px;
+}
+.footer{
+  /* background-color: red; */
+  font-size: 13px;
+  color: rgb(35, 35, 35);
+  font-weight: 400;
+  word-spacing: 4px;
+  line-height: 18px;
+  width: 195px;
+  cursor: pointer;
+  margin-left: 6px;
+  margin-bottom: 16px;
+}
+
+@media (min-width:1300px){
+  .sidebar{
+    width: 210px;
+    padding: 12px;
+    overflow-y: hidden;
+  }
+  .sidebar:hover{
+    overflow-y: scroll;
+  }
+  .sidebar::-webkit-scrollbar {
+    width: 8px;
+    /* width of the entire scrollbar */
+  }
+  
+  .sidebar::-webkit-scrollbar-track {
+    margin-bottom: 4px;        
+    /* color of the tracking area */
+  }
+  
+  .sidebar::-webkit-scrollbar-thumb {
+    background-color: rgb(154, 154, 154);    
+    /* color of the scroll thumb */
+    border-radius: 20px;
+        
+    /* roundness of the scroll thumb */
+    /* creates padding around scroll thumb */
+  }
+  .sidebar div:first-child{
+    background-color: rgb(238, 238, 238);
+  }
+  .sidebar div:first-child:hover{
+    background-color: rgb(238, 238, 238);
+  }
+.sidebar-element{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    flex-direction: row;
+    height: 20px;
+    max-width: 190px;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: start;
+    
+  }
+  .sidebar-element img{
+    width: 24px;
+    margin-bottom: 0px;
+    margin-left: 12px;
+    margin-right: 24px;
+  }
+  .hidden{
+    display: flex;
+  }
+  .hidden-block{
+    display: block;
+  }
+}
+

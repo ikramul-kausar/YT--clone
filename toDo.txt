@@ -1,0 +1,6 @@
+add horizontal scroll to header2
+add video thumbnail pupup
+add support fro smaller screens(phones)
+maybe: remove profile picture popup
+add more thumbnails in grid
+modify svg from img tag to directly embeded svgs to modified them using css.
